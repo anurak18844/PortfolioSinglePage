@@ -12,25 +12,34 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="Styles/style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="hero-section">
-        <div class="container pt-5">
+    <div class="hero-section mt-5">
+        <div class="container">
+            <div class="text-center container btn-color">
+                <button type="button" class="btn btn-warning"></button>
+                <button type="button" class="btn btn-danger"></button>
+                <button type="button" class="btn btn-success"></button>
+                <button type="button" class="btn btn-info"></button>
+            </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
                     <h3>Hello!</h3>
                     <h1><span>&emsp;&emsp;I'm Mr.Anurak</span></h1>
-                    <hr style="color: orange;height: 3px;">
+                    <hr style="height: 3px;">
                     <h1><span>Siwaboonya</span></h1>
                     <h4 class="text-end"><span>Infomation Technology</span></h4>
-                    <p class="pt-3">&emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, tempora soluta iusto recusandae
+                    <p class="pt-3">&emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                        tempora soluta iusto recusandae
                         adipisci maxime dolorum ex id dicta atque omnis amet facere minus aliquam ad distinctio,
                         veritatis voluptas optio.</p>
                     <div class="btn-container pt-2">
-                        <button class="btn btn-light container-fluid">Hire Me</button>
+                        <button class="btn btn-light container-fluid" onclick="window.location.href='#cantact-me';">Hire Me</button>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
@@ -41,8 +50,109 @@
             </div>
         </div>
     </div>
-    
-   
+
+    <div class="section-card pb-5 pt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Card Dialog</h1>
+            <div class="row pb-4">
+                <div class="col-lg-4 col-md-12 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <hr>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla vero, modi
+                                ut blanditiis inventore officia? Alias consequatur esse officia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <hr>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla vero, modi
+                                ut blanditiis inventore officia? Alias consequatur esse officia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <hr>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla vero, modi
+                                ut blanditiis inventore officia? Alias consequatur esse officia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <hr class="mt-5" style="height: 2px;background-color: black;width: 60%;">
+        </center>
+    </div>
+
+    <div class="pb-5 section-skill">
+        <div class="container pb-5">
+            <h1 class="text-center mb-5">My Skills</h1>
+
+            <div class="skill-bar">
+                <h3>HTML<span>95%</span></h3>
+                <div class="bar bar1"><span class="fill"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <h3>CSS<span>95%</span></h3>
+                <div class="bar bar2"><span class="fill"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <h3>BOOTSTRAP<span>95%</span></h3>
+                <div class="bar bar3"><span class="fill"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <h3>PHP<span>95%</span></h3>
+                <div class="bar bar4"><span class="fill"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <h3>FLUTTER+DART<span>95%</span></h3>
+                <div class="bar bar5"><span class="fill"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <h3>JAVA<span>95%</span></h3>
+                <div class="bar bar6"><span class="fill"></span></div>
+            </div>
+        </div>
+        <center>
+            <hr class="mt-5" style="height: 2px;background-color: black;width: 60%;">
+        </center>
+    </div>
+    <div id="cantact-me"></div>
+    <div class="pb-5 text-center bg-white">
+        <div class="container">
+            <h1 class="text-center mb-5">Contact Me</h1>
+            <div class="social-menu">
+                <ul>
+                    <li><a href="https://www.facebook.com/anurak.sivaboonya" target="_blank"><i
+                                class="fab fa-facebook-f"></i></i></a></li>
+                    <li><a href="https://line.me/ti/p/LLFxOETJiM" target="_blank"><i class="fab fa-line"></i></a></li>
+                    <li><a href="mailto:apex18844@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="tel:0823632737"><i class="fas fa-phone"></i></a></li>
+                </ul>
+            </div>
+            <h4 class="pt-3">Tell : 082-363-2737</h4>
+        </div>
+    </div>
+
 </body>
 
 </html>

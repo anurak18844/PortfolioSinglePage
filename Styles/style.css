@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
 :root{
-    --background-color:#333647
+    --background-color:#333647;
+    --color:orange;
 }
 
 *{
@@ -11,11 +12,14 @@
 body{
     background-color: var(--background-color) !important;
 }
-
+hr{
+    color: var(--color) !important;
+}
 .hero-section .row{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    margin-bottom: 3rem;
 }
 
 .hero-section .row h1,h2,h3,p{
@@ -49,12 +53,192 @@ body{
 }
 
 .hero-section .row img{
-    width: 80%
+    width: 80%;
 }
 
-.btn-container button:hover{
-    animation: bounceIn;
-    animation-duration: 0.5s;
+.btn-container button{
+    border: none;
     color: white;
-    background-color: orange
+    background-color: var(--color);
+}
+
+
+.btn-container button:hover{
+    color: var(--color);
+    background-color: white;
+    border-color: var(--color);  
+}
+
+.section-card{
+    background-color: white;
+}
+
+.card{
+    width: auto;
+    height: auto;
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translate(0,-10px);
+}
+
+.section-skill{
+    background-color:white;
+}
+
+.skill-bar h3,h1,h2{
+    color:black;
+}
+
+.skill-bar h3{
+    font-size: 20px;
+}
+
+.skill-bar h3{
+    margin-top: 2rem;
+}
+
+.skill-bar span{
+    display: block;
+    text-align: end;
+}
+
+.fill{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color);
+}
+
+.bar1 span{
+    width: 95%;
+}
+
+.bar2 span{
+    width: 95%;
+}
+
+.bar3 span{
+    width: 95%;
+}
+
+.bar4 span{
+    width: 95%;
+}
+
+.bar5 span{
+    width: 95%;
+}
+
+.bar6 span{
+    width: 95%;
+}
+
+.bar{
+    width: 100%;
+    height:.5rem;
+    background-color:#ccc;
+    position: relative;
+}
+
+.btn-color .btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+}
+
+.social-menu ul{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab, .social-menu ul li .fas{
+    font-size:30px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .3s;
+    border-width: 1px;
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0,-10px);
+}
+.social-menu ul li:nth-child(1) a{
+    background-color: #1877F2;
+}
+.social-menu ul li:nth-child(2) a{
+    background-color: #00C300;
+}
+.social-menu ul li:nth-child(3) a{
+    background-color: #DF2029;
+}
+.social-menu ul li:nth-child(4) a{
+    background-color: #25D366;
+}
+
+
+@media (max-width: 1200px) and (min-width: 768px){
+    .hero-section .row h1{
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) and (min-width:425px){
+    .hero-section .row h1{
+        font-size: 35px;
+    }
+    .hero-section .row h2{
+        font-size: 15px;
+    }
+    .hero-section .row h4{
+        font-size: 20px;
+    }
+    .hero-section .row p{
+        font-size: 15px;
+    }
+    .hero-section .row h3{
+        font-size: 35px;
+    }
+    .hero-section .row{
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 424px) and (min-width:320px){
+    .hero-section .row h1{
+        font-size: 35px;
+    }
+    .hero-section .row h2{
+        font-size: 15px;
+    }
+    .hero-section .row h4{
+        font-size: 20px;
+    }
+    .hero-section .row p{
+        font-size: 15px;
+    }
+    .hero-section .row h3{
+        font-size: 35px;
+    }
+    .hero-section .row{
+        margin-bottom: 2rem;
+    }
 }
