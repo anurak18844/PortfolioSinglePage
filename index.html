@@ -16,16 +16,17 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="Scripts/script.js"></script>
 </head>
 
 <body>
     <div class="hero-section mt-5">
         <div class="container">
             <div class="text-center container btn-color">
-                <button type="button" class="btn btn-warning"></button>
-                <button type="button" class="btn btn-danger"></button>
-                <button type="button" class="btn btn-success"></button>
-                <button type="button" class="btn btn-info"></button>
+                <button class="btn btn-warning" onclick="changeColorOrange()"></button>
+                <button class="btn btn-danger" onclick="changeColorRed()"></button>
+                <button class="btn btn-success" onclick="changeColorGreen()"></button>
+                <button class="btn btn-info" onclick="changeColorBlue()"></button>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
@@ -34,12 +35,13 @@
                     <hr style="height: 3px;">
                     <h1><span>Siwaboonya</span></h1>
                     <h4 class="text-end"><span>Infomation Technology</span></h4>
-                    <p class="pt-3">&emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-                        tempora soluta iusto recusandae
-                        adipisci maxime dolorum ex id dicta atque omnis amet facere minus aliquam ad distinctio,
-                        veritatis voluptas optio.</p>
+                    <p class="pt-3 text-center">นาย อนุรักษ์ ศิวะบุญญา บาส<br>
+                        6/4 ม.2 ต.โพรงมะเดื่อ อ.เมืองนครปฐม จ.นครปฐม 73000 <br>
+                        โทรศัพท์มือถือ : 082-363-2737 <br>
+                        email : anurak18844@gmail.com
+                    </p>
                     <div class="btn-container pt-2">
-                        <button class="btn btn-light container-fluid" onclick="window.location.href='#cantact-me';">Hire Me</button>
+                        <button class="btn btn-light container-fluid" onclick="window.location.href='#cantact-me';">ติดต่อฉันทันที !</button>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
@@ -53,16 +55,22 @@
 
     <div class="section-card pb-5 pt-5">
         <div class="container">
-            <h1 class="text-center mb-5">Card Dialog</h1>
+            <h1 class="text-center mb-5">ข้อมูลเกี่ยวกับฉัน</h1>
             <div class="row pb-4">
                 <div class="col-lg-4 col-md-12 mt-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
-                            <hr>
+                            <h5 class="card-title"><b>ประวัติการศึกษา</b></h5>
+                            <hr class="bg-dark">
                             <p class="card-text text-dark">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla vero, modi
-                                ut blanditiis inventore officia? Alias consequatur esse officia.
+                              <ul>
+                                  <li><b>พ.ศ.2563 - ปัจจุบัน</b></li>
+                                  กำลังศึกษาในระดับประกาศนียบัตรวิชาชีพชั้นสูง(ปวส.) ชั้นปีที่ 2 สาขาวิชาเทคโนโลยีสารสนเทศ ณ วิทยาลัยอาชีวศึกษายครปฐม เกรดเฉลี่ยสะสม 3.68
+                                  <li class="mt-2"><b>พ.ศ. 2560 - พ.ศ. 2563</b></li>
+                                  ประกาศนียบัตรวิชาชีพ(ปวช.) สาขาวิชา คอมพิวเตอร์ธุรกิจ ณ วิทยาลัยอาชีวศึกาษนครปฐม เกรดเฉลี่ยสะสม 3.76
+                                  <li class="mt-2"><b>พ.ศ. 2557 - พ.ศ. 2560</b></li>
+                                  มัธยมศึกษาตอนต้น สายการเรียน วิทย์-คณิตย์ ณ โรงเรียนศรีวิชัยวิทยา เกรดเฉลี่ยสะสม 3.49
+                              </ul>
                             </p>
                         </div>
                     </div>
@@ -70,11 +78,18 @@
                 <div class="col-lg-4 col-md-12 mt-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
-                            <hr>
+                            <h5 class="card-title"><b>บคุลิกภาพ</b></h5>
+                            <hr class="bg-dark">
                             <p class="card-text text-dark">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla vero, modi
-                                ut blanditiis inventore officia? Alias consequatur esse officia.
+                              <ul>
+                                  <li><b>มีความเป็นผู้นำ</b></li>
+                                    สามารถจัดการกับอารมณ์และผู้คนของตนเองได้อย่างมีประสิทธิภาพ และพร้อมที่จะให้คำแนะนำอยู่เสมอ
+                                  <li class="mt-2"><b>มีมนุษย์สัมพันธ์ดี</b></li>
+                                  เป็นคนที่มีอารมณ์ขบขัน สามารถพูดคุยและเข้ากับผู้อื่นได้เป็นอย่างดี ทั้งการทำงานและการเรียนรู้ร่วมกันกับผู้อื่น และให้เกียรติผู้อื่นอย่างจริงใจ 
+                                  <li class="mt-2"><b>เตรียมพร้อมในการทำงานอยู่เสมอ</b></li>
+                                  จะรู้สึกดีใจ ตื่นเต้น และพร้อมที่จะทำงานอย่างเต็มที่เมื่อมีโอกาสในการทำงานใหม่ๆ หรือการทำงานร่วมกันกับผู้อื่น
+                                  
+                              </ul>
                             </p>
                         </div>
                     </div>
@@ -82,11 +97,18 @@
                 <div class="col-lg-4 col-md-12 mt-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
-                            <hr>
+                            <h5 class="card-title"><b>โปรเจคที่เคยทำ</b></h5>
+                            <hr class="bg-dark">
                             <p class="card-text text-dark">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla vero, modi
-                                ut blanditiis inventore officia? Alias consequatur esse officia.
+                              <ul>
+                                  <li><b>เว็ปคอร์สเรียนออนไลน์</b></li>
+                                   พัฒนาด้วยภาษา JAVA + SQL ร่วมกับ HTML + CSS และ BOOTSRAP4
+                                  <li class="mt-2"><b>เว็ปจองตั๋วหนัง</b></li>
+                                    พัฒนาด้วยภาาษ PHP + SQL สามารถ เพิ่ม ลบ แก้ไข ข้อมูล User และข้อมูลหนัง อาทิ รอบฉาย ชื่อ รูปภาพ ผู้ใช้งานทั่วไปสามารถ ลงทะเบียน ล็อคอิน แก้ไขข้อมูลส่วนตัว ดูรอบฉาย และจองตั๋วหนังล่วงหน้าผ่านเว็ปไซต์ และชำระที่หน้าเคาน์เตอร์ ผู้ดูแลสามารถรับชำระผ่านหน้า POS ของเว็บไซต์ และตรวจสอบสถาณะ หรือประวัติการจอง และการชำระ 
+                                  <li class="mt-2"><b>เตรียมพร้อมในการทำงานอยู่เสมอ</b></li>
+                                  จะรู้สึกดีใจ ตื่นเต้น และพร้อมที่จะทำงานอย่างเต็มที่เมื่อมีโอกาสในการทำงานใหม่ๆ หรือการทำงานร่วมกันกับผู้อื่น
+                                  
+                              </ul>
                             </p>
                         </div>
                     </div>
@@ -133,7 +155,7 @@
             </div>
         </div>
         <center>
-            <hr class="mt-5" style="height: 2px;background-color: black;width: 60%;">
+            <hr class="mt-5 hr-color" style="height: 2px;background-color: black;width: 60%;">
         </center>
     </div>
     <div id="cantact-me"></div>
@@ -152,7 +174,52 @@
             <h4 class="pt-3">Tell : 082-363-2737</h4>
         </div>
     </div>
+    <div class="section-footer">
+        <div class="container text-light text-center">
+            <h6>
+                © Copyright Anurak | Infomation Technology 2021
+            </h6>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-sort-up"></i></button>
 
 </body>
+<script>
+    var r = document.querySelector(':root');
+    function changeColorRed() {
+        r.style.setProperty('--color', 'red');
+    }
+
+    function changeColorGreen() {
+        r.style.setProperty('--color', 'green');
+    }
+
+    function changeColorBlue() {
+        r.style.setProperty('--color', '#0361da');
+    }
+
+    function changeColorOrange() {
+        r.style.setProperty('--color', 'orange');
+    }
+
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
 
 </html>

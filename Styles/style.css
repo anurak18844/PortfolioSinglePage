@@ -5,6 +5,10 @@
     --color:orange;
 }
 
+/* html{
+    scroll-behavior: smooth;
+} */
+
 *{
     font-family: 'Poppins', sans-serif;
 }
@@ -93,11 +97,9 @@ hr{
 
 .skill-bar h3{
     font-size: 20px;
-}
-
-.skill-bar h3{
     margin-top: 2rem;
 }
+
 
 .skill-bar span{
     display: block;
@@ -152,7 +154,7 @@ hr{
 .social-menu ul{
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 }
 
 .social-menu ul li{
@@ -193,6 +195,32 @@ hr{
 .social-menu ul li:nth-child(4) a{
     background-color: #25D366;
 }
+.section-footer{
+    background-color: (var(--background-color));
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(8, 8, 8);
+    opacity: .65;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+  }
 
 
 @media (max-width: 1200px) and (min-width: 768px){
