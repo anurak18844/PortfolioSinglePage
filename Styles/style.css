@@ -58,6 +58,13 @@ hr{
 
 .hero-section .row img{
     width: 80%;
+    border-radius:50%;
+    transition: .3s;
+}
+
+.hero-section .row img:hover{
+    width: 85%;
+    transform: translate(0,-10px);
 }
 
 .btn-container button{
